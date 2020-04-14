@@ -5,4 +5,4 @@ main: de.phoenixts.phoenix.Main
 
 commands:
   team:
-   aliases: [staff]
+    aliases: [staff]
