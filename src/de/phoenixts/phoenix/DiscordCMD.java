@@ -7,13 +7,13 @@ import org.bukkit.entity.Player;
 
 import de.phoenixts.phoenix.utils.Utils;
 
-public class TeamCMD implements CommandExecutor {
+public class DiscordCMD implements CommandExecutor {
 
 	private Main plugin;
 
-	public TeamCMD(Main plugin) {
+	public DiscordCMD(Main plugin) {
 		this.plugin = plugin;
-		plugin.getCommand("team").setExecutor(this);
+		plugin.getCommand("discord").setExecutor(this);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class TeamCMD implements CommandExecutor {
 		}
 		Player p = (Player) sender;
 
-		if (p.hasPermission(plugin.getConfig().getString("team_permission"))) {
-			p.sendMessage(Utils.chat(plugin.getConfig().getString("Team_message")));
+		if (p.hasPermission(plugin.getConfig().getString("discord_permission"))) {
+			p.sendMessage(Utils.chat(plugin.getConfig().getString("Discord_message")));
 
 			return true;
 		} else {

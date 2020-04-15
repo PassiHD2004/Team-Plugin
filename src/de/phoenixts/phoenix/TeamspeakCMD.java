@@ -1,5 +1,4 @@
 package de.phoenixts.phoenix;
-
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -7,13 +6,13 @@ import org.bukkit.entity.Player;
 
 import de.phoenixts.phoenix.utils.Utils;
 
-public class TeamCMD implements CommandExecutor {
+public class TeamspeakCMD implements CommandExecutor {
 
 	private Main plugin;
 
-	public TeamCMD(Main plugin) {
+	public TeamspeakCMD(Main plugin) {
 		this.plugin = plugin;
-		plugin.getCommand("team").setExecutor(this);
+		plugin.getCommand("teamspeak").setExecutor(this);
 	}
 
 	@Override
@@ -25,8 +24,8 @@ public class TeamCMD implements CommandExecutor {
 		}
 		Player p = (Player) sender;
 
-		if (p.hasPermission(plugin.getConfig().getString("team_permission"))) {
-			p.sendMessage(Utils.chat(plugin.getConfig().getString("Team_message")));
+		if (p.hasPermission(plugin.getConfig().getString("teamspeak_permission"))) {
+			p.sendMessage(Utils.chat(plugin.getConfig().getString("TeamSpeak_message")));
 
 			return true;
 		} else {
@@ -34,5 +33,7 @@ public class TeamCMD implements CommandExecutor {
 		}
 		return false;
 	}
+	
+	
 
 }
