@@ -1,2 +1,2 @@
 # Team-Plugin
-Dies ist ein Spigot Plugin, das auf den Befehl /team eine Nachricht dem jeweiligen Spieler sendet, mit Informationen über das Team, etc. (Nachrichten sind anpassbar)
+Dies ist ein Spigot Plugin, das /team /teamspeak und /discord enthält und eine Nachricht dem jeweiligen Spieler sendet, mit den jeweiligen Informationen, etc. (Nachrichten sind anpassbar)
