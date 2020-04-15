@@ -5,6 +5,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import de.phoenixts.phoenix.utils.Utils;
+
 public class TeamCMD implements CommandExecutor {
 
 	private Main plugin;
@@ -17,20 +19,20 @@ public class TeamCMD implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)) {
-			sender.sendMessage((plugin.getConfig().getString("no_console")));
+			sender.sendMessage(Utils.chat(plugin.getConfig().getString("no_console")));
 			return true;
 
 		}
 		Player p = (Player) sender;
 
 		if (p.hasPermission(("team.message"))) {
-			p.sendMessage(plugin.getConfig().getString("Team_message"));
-			
+			p.sendMessage(Utils.chat(plugin.getConfig().getString("Team_message")));
+
 			return true;
-	} else{
-		p.sendMessage(plugin.getConfig().getString("no_perm"));
-	}
-			return false;
+		} else {
+			p.sendMessage(Utils.chat(plugin.getConfig().getString("no_perm")));
+		}
+		return false;
 	}
 
 }

@@ -1,9 +1,10 @@
-Team_message: '§eDu willst dem Team joinen? Bewirb dich jetzt bei uns, via Minecraft Chat, oder E-Mail.'
+Team_message: '&eDu willst dem Team joinen? Bewirb dich jetzt bei uns, via Minecraft Chat, oder E-Mail.'
 # Leg die Nachricht fest, die der Spieler erhält.
 
-no_perm: '§cDu bist nicht berechtigt diesen Befehl auszuführen'
+no_perm: '&cDu bist nicht berechtigt diesen Befehl auszuführen'
 # Leg die Nachricht fest, die ein Spieler ohne Berechtigung erhält
 
-no_console: '§cNur Spieler können diesen Befehl ausführen'
+no_console: '&cNur Spieler können diesen Befehl ausführen'
 # Leg die Nachricht fest, die in der Konsole erscheint, beim ausführen des Befehls in der Konsole
 
+# Farbcodes mit &
