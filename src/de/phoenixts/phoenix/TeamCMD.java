@@ -25,7 +25,7 @@ public class TeamCMD implements CommandExecutor {
 		}
 		Player p = (Player) sender;
 
-		if (p.hasPermission(("team.message"))) {
+		if (p.hasPermission(plugin.getConfig().getString("permission"))) {
 			p.sendMessage(Utils.chat(plugin.getConfig().getString("Team_message")));
 
 			return true;

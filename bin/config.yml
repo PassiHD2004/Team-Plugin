@@ -8,3 +8,6 @@ no_console: '&cNur Spieler können diesen Befehl ausführen'
 # Leg die Nachricht fest, die in der Konsole erscheint, beim ausführen des Befehls in der Konsole
 
 # Farbcodes mit &
+
+permission: 'team.message'
+# Leg die benötigte Berechtigung für diesen Befehl fest.
